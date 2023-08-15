@@ -1,23 +1,29 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Header from '@/components/Header.vue'
+import Sidebar from '@/components/Sidebar.vue'
+import { ref } from 'vue';
+
+const isExpanded = ref(false)
+
+const toggleSidebar = () => {
+  isExpanded.value = !isExpanded.value
+}
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div class="flex h-full">
+    <Sidebar :isExpanded="isExpanded"/>
+    <div class="w-full flex flex-col">
+        <Header :toggleSidebar="toggleSidebar"/>
+        <div class="flex-1 p-6">
+          <RouterView />
+        </div>
+        <footer class="h-[50px] bg-emerald-800 text-white flex justify-center items-center py-8">
+          <h1 class="text-2xl font-bold">by Ali Ahmad Ataie</h1>
+        </footer>
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
 <style scoped>
