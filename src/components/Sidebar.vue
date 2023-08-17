@@ -16,7 +16,7 @@ const props = defineProps(['isExpanded'])
         <div class="flex flex-col justify-between">
             <div class="flex flex-col">
                 <RouterLink to="/" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
-                    <img src="../assets/logo.svg" alt="" class="w-[30px]">
+                    <span class="material-symbols-outlined">home</span>
                     <span class="text-xl font-bold transition-all ease-out duration-300"
                     :class="!isExpanded && 'opacity-0 -translate-x-4'"
                     >
