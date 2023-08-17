@@ -11,6 +11,7 @@ const props = defineProps(['toggleSidebar'])
             class="bg-gray-950 h-full w-6 cursor-pointer"
             @click="toggleSidebar"
             ></div>
+            <span class="material-symbols-outlined">menu</span>
         </div>
     </div>  
 </template>
