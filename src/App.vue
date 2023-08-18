@@ -19,8 +19,8 @@ const toggleSidebar = () => {
         <div class="flex-1 p-6">
           <RouterView />
         </div>
-        <footer class="h-[50px] bg-emerald-800 text-white flex justify-center items-center py-8">
-          <h1 class="text-2xl font-bold">by Ali Ahmad Ataie</h1>
+        <footer class="h-[50px] bg-emerald-800 text-white flex justify-center items-center py-[30px]">
+          <h1 class="text-xl font-semibold">by Ali Ahmad Ataie</h1>
         </footer>
     </div>
   </div>
