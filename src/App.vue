@@ -3,10 +3,10 @@ import Header from '@/components/Header.vue'
 import Sidebar from '@/components/Sidebar.vue'
 import { ref } from 'vue';
 
-const isExpanded = ref(false)
+const isExpanded = ref(false);
 
 const toggleSidebar = () => {
-  isExpanded.value = !isExpanded.value
+  isExpanded.value = !isExpanded.value;
 }
 
 </script>
