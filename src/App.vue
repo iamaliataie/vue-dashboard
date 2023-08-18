@@ -14,8 +14,8 @@ const toggleSidebar = () => {
 <template>
   <div class="flex h-full">
     <Sidebar :isExpanded="isExpanded" :toggleSidebar="toggleSidebar"/>
-    <div class="w-full flex flex-col min-h-screen">
-        <Header :toggleSidebar="toggleSidebar"/>
+    <div class="w-full flex flex-col min-h-screen" >
+        <Header :toggleSidebar="toggleSidebar" />
         <div class="flex-1 p-6">
           <RouterView />
         </div>
