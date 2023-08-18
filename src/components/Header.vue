@@ -1,6 +1,6 @@
 <script setup>
 
-const props = defineProps(['toggleSidebar'])
+const props = defineProps(['toggleSidebar']);
 
 </script>
 
