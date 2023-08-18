@@ -27,24 +27,53 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                 X
             </strong>
         </div>
-        <div class="flex flex-col justify-between">
-            <div class="flex flex-col">
-                <RouterLink to="/" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
-                    <span class="material-symbols-outlined icon">home</span>
+        <div class="flex flex-col justify-between h-[calc(100vh-50px)]">
+                <div class="flex flex-col">
+                    <RouterLink :to="{ name: 'home' }" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
+                        <span class="material-symbols-outlined icon">home</span>
 
-                    <span class="text-xl font-bold transition ease-out duration-300"
-                    :class="!isExpanded && 'opacity-0 -translate-x-4'"
-                    >
-                        Home
-                    </span>
-                </RouterLink>
-                <RouterLink to="/about" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
+                        <span class="text-xl font-bold transition ease-out duration-300"
+                        :class="!isExpanded && 'opacity-0 -translate-x-4'"
+                        >
+                            Home
+                        </span>
+                    </RouterLink>
+                    <RouterLink :to="{name: 'about'}" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
+                        <span class="material-symbols-outlined icon">tune</span>
+
+                        <span class="text-xl font-bold transition ease-out duration-300"
+                        :class="!isExpanded && 'opacity-0 -translate-x-4'"
+                        >
+                            Properties
+                        </span>
+                    </RouterLink>
+                    <RouterLink :to="{name: 'inquiry'}" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
+                        <span class="material-symbols-outlined icon">tune</span>
+
+                        <span class="text-xl font-bold transition ease-out duration-300"
+                        :class="!isExpanded && 'opacity-0 -translate-x-4'"
+                        >
+                            Inquiries
+                        </span>
+                    </RouterLink>
+                </div>
+            <div class="flex flex-col">
+                <RouterLink :to="{ name: 'signup' }" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
                     <span class="material-symbols-outlined icon">tune</span>
 
                     <span class="text-xl font-bold transition ease-out duration-300"
                     :class="!isExpanded && 'opacity-0 -translate-x-4'"
                     >
-                        Settings
+                        Signup
+                    </span>
+                </RouterLink>
+                <RouterLink :to="{ name: 'login' }" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
+                    <span class="material-symbols-outlined icon">tune</span>
+
+                    <span class="text-xl font-bold transition ease-out duration-300"
+                    :class="!isExpanded && 'opacity-0 -translate-x-4'"
+                    >
+                        Login
                     </span>
                 </RouterLink>
             </div>
