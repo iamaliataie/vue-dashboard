@@ -14,16 +14,22 @@ const toggleSidebar = () => {
 
 <template>
   <div class="flex h-full">
+    
     <Sidebar :isExpanded="isExpanded" :toggleSidebar="toggleSidebar"/>
+
     <div class="w-full flex flex-col min-h-screen" >
         <Header :toggleSidebar="toggleSidebar" />
+
         <div class="flex-1 p-6">
           <RouterView />
         </div>
+
         <footer class="h-[50px] bg-emerald-800 text-white flex justify-center items-center py-[30px]">
           <h1 class="text-xl font-semibold">by Ali Ahmad Ataie</h1>
         </footer>
+
     </div>
+
   </div>
 </template>
 
