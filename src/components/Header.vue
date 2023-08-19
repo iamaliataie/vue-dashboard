@@ -12,7 +12,7 @@ const props = defineProps(['isExpanded', 'toggleSidebar']);
             >
                 {{ isExpanded ? 'close': 'menu' }}
             </span>
-            <span class="material-symbols-outlined">radio_button_partial</span>
+            <!-- <span class="material-symbols-outlined">radio_button_partial</span> -->
         </div>
     </div>  
 </template>
