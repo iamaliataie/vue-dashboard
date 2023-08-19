@@ -77,4 +77,5 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
 .icon {
     font-size: 28px;
 }
+
 </style>

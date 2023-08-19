@@ -9,7 +9,9 @@ const props = defineProps(['isExpanded', 'toggleSidebar']);
         <div class="flex flex-row-reverse justify-start gap-x-2 items-center h-[50px] w-full px-4">
             <span class="md:hidden material-symbols-outlined cursor-pointer"
             @click="toggleSidebar"
-            >{{ isExpanded ? 'close': 'menu' }}</span>
+            >
+                {{ isExpanded ? 'close': 'menu' }}
+            </span>
             <!-- <span class="material-symbols-outlined">radio_button_partial</span> -->
         </div>
     </div>  
