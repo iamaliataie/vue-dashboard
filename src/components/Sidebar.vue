@@ -31,7 +31,6 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                 <div class="flex flex-col">
                     <RouterLink :to="{ name: 'home' }" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
                         <span class="material-symbols-outlined icon">home</span>
-
                         <span class="text-xl font-bold transition ease-out duration-300"
                         :class="!isExpanded && 'opacity-0 -translate-x-4'"
                         >
@@ -40,7 +39,6 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                     </RouterLink>
                     <RouterLink :to="{name: 'about'}" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
                         <span class="material-symbols-outlined icon">real_estate_agent</span>
-
                         <span class="text-xl font-bold transition ease-out duration-300"
                         :class="!isExpanded && 'opacity-0 -translate-x-4'"
                         >
@@ -49,7 +47,6 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                     </RouterLink>
                     <RouterLink :to="{name: 'inquiry'}" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
                         <span class="material-symbols-outlined icon">forum</span>
-
                         <span class="text-xl font-bold transition ease-out duration-300"
                         :class="!isExpanded && 'opacity-0 -translate-x-4'"
                         >
@@ -60,7 +57,6 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
             <div class="flex flex-col">
                 <RouterLink :to="{ name: 'signup' }" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
                     <span class="material-symbols-outlined icon">person_add</span>
-
                     <span class="text-xl font-bold transition ease-out duration-300"
                     :class="!isExpanded && 'opacity-0 -translate-x-4'"
                     >
@@ -69,7 +65,6 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                 </RouterLink>
                 <RouterLink :to="{ name: 'login' }" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
                     <span class="material-symbols-outlined icon">login</span>
-
                     <span class="text-xl font-bold transition ease-out duration-300"
                     :class="!isExpanded && 'opacity-0 -translate-x-4'"
                     >
