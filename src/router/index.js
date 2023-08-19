@@ -15,7 +15,7 @@ const router = createRouter({
     },
     {
       path: '/property',
-      name: 'about',
+      name: 'property',
       component: PropertyView
     },
     {

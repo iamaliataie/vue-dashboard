@@ -6,81 +6,64 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
 
 <template>
     <div 
-        class="fixed w-0 md:w-[70px] overflow-hidden h-screen bg-gray-950 text-white md:sticky top-0 transition-all ease-in-out duration-300 z-50"
+        class="fixed -translate-x-full md:translate-x-0 min-w-fit overflow-hidden bg-gray-950 text-white h-screen md:sticky top-0 ease-in-out duration-300 z-50"
         :class="isExpanded && 'is-expanded'"
     > 
-        <div class="bg-gray-700 h-[50px] grid grid-cols-3 items-center relative">
-            <div class="w-[60px] col-span-1 flex justify-center ms-1">
-                <img src="../assets/favicon.svg" alt="logo" class="w-8">
-            </div>
-            <div class="col-span-2 w-full transition ease-out duration-300"
-            :class="!isExpanded && 'opacity-0 translate-x-4'">
-                <h1 class="text-xl font-bold">
-                    Dashboard
-                </h1>
-            </div>
-            <strong 
-            class="md:hidden absolute top-[50%] -translate-y-[50%] right-3 bg-gray-500  px-2 cursor-pointer rounded "
-            v-if="isExpanded"
-            @click="toggleSidebar"
-            >
-                X
-            </strong>
-        </div>
-        <div class="flex flex-col justify-between h-[calc(100vh-50px)]">
-                <div class="flex flex-col">
-                    <RouterLink :to="{ name: 'home' }" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
-                        <span class="material-symbols-outlined icon">home</span>
-                        <span class="text-xl font-bold transition ease-out duration-300"
-                        :class="!isExpanded && 'opacity-0 -translate-x-4'"
-                        >
-                            Home
-                        </span>
-                    </RouterLink>
-                    <RouterLink :to="{name: 'about'}" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
-                        <span class="material-symbols-outlined icon">real_estate_agent</span>
-                        <span class="text-xl font-bold transition ease-out duration-300"
-                        :class="!isExpanded && 'opacity-0 -translate-x-4'"
-                        >
-                            Properties
-                        </span>
-                    </RouterLink>
-                    <RouterLink :to="{name: 'inquiry'}" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
-                        <span class="material-symbols-outlined icon">forum</span>
-                        <span class="text-xl font-bold transition ease-out duration-300"
-                        :class="!isExpanded && 'opacity-0 -translate-x-4'"
-                        >
-                            Inquiries
-                        </span>
-                    </RouterLink>
+            <div class="h-full bg-gray-950 flex flex-col">
+                <div class="relative flex flex-col items-center border-b-2 p-4 space-y-4">
+                    <img src="../assets/favicon.svg" alt="logo" class="w-14">
+                    <h1 class="text-2xl">Real Estate Management</h1>
                 </div>
-            <div class="flex flex-col">
-                <RouterLink :to="{ name: 'signup' }" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
-                    <span class="material-symbols-outlined icon">person_add</span>
-                    <span class="text-xl font-bold transition ease-out duration-300"
-                    :class="!isExpanded && 'opacity-0 -translate-x-4'"
-                    >
-                        Signup
-                    </span>
-                </RouterLink>
-                <RouterLink :to="{ name: 'login' }" class="p-4 flex space-x-4 items-center ease-in-out duration-100">
-                    <span class="material-symbols-outlined icon">login</span>
-                    <span class="text-xl font-bold transition ease-out duration-300"
-                    :class="!isExpanded && 'opacity-0 -translate-x-4'"
-                    >
-                        Login
-                    </span>
-                </RouterLink>
+                <div class="flex flex-col justify-between h-full">
+                    <div>
+                        <RouterLink :to="{ name: 'home' }"
+                            class="py-4 flex items-center space-x-4 px-4"
+                            @click="toggleSidebar"
+                        >
+                            <span class="material-symbols-outlined">dashboard</span>
+                            <span class="text-xl font-bold">Dashboard</span>
+                        </RouterLink>
+                        <RouterLink :to="{ name: 'property' }"
+                            class="py-4 flex items-center space-x-4 px-4"
+                            @click="toggleSidebar"
+                        >
+                            <span class="material-symbols-outlined">real_estate_agent</span>
+                            <span class="text-xl font-bold">Properties</span>
+                        </RouterLink>
+                        <RouterLink :to="{ name: 'inquiry' }"
+                            class="py-4 flex items-center space-x-4 px-4"
+                            @click="toggleSidebar"
+                        >
+                            <span class="material-symbols-outlined">forum</span>
+                            <span class="text-xl font-bold">Inquiries</span>
+                        </RouterLink>
+                    </div>
+                    <div>
+                        <RouterLink :to="{ name: 'signup' }"
+                            class="py-4 flex items-center space-x-4 px-4"
+                            @click="toggleSidebar"
+                        >
+                            <span class="material-symbols-outlined">person_add</span>
+                            <span class="text-xl font-bold">Signup</span>
+                        </RouterLink>
+                        <RouterLink :to="{ name: 'login' }"
+                            class="py-4 flex items-center space-x-4 px-4"
+                            @click="toggleSidebar"
+                        >
+                            <span class="material-symbols-outlined">login</span>
+                            <span class="text-xl font-bold">Login</span>
+                        </RouterLink>
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
 </template>
 
 <style scoped>
 
-.is-expanded{
+.is-expanded {
     @apply
-        w-[300px]
+        translate-x-0
 }
 
 .router-link-exact-active{
