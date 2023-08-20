@@ -1,5 +1,7 @@
 <script setup>
 
+import NavLink from '@/components/NavLink.vue'
+
 const props = defineProps(['isExpanded', 'toggleSidebar'])
 
 </script>
@@ -16,14 +18,17 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                 </div>
                 <div class="flex flex-col justify-between h-full">
                     <div>
-                        <RouterLink :to="{ name: 'home' }"
+                        <NavLink link="home" icon="dashboard" text="Dashboard"/>
+                        <NavLink link="property" icon="real_estate_agent" text="Properties"/>
+                        <NavLink link="inquiry" icon="forum" text="Inquiries"/>
+                        <!-- <RouterLink :to="{ name: 'home' }"
                             class="py-4 flex items-center space-x-4 px-4"
                             @click="toggleSidebar"
                         >
                             <span class="material-symbols-outlined">dashboard</span>
                             <span class="text-xl font-bold">Dashboard</span>
-                        </RouterLink>
-                        <RouterLink :to="{ name: 'property' }"
+                        </RouterLink> -->
+                        <!-- <RouterLink :to="{ name: 'property' }"
                             class="py-4 flex items-center space-x-4 px-4"
                             @click="toggleSidebar"
                         >
@@ -36,10 +41,12 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                         >
                             <span class="material-symbols-outlined">forum</span>
                             <span class="text-xl font-bold">Inquiries</span>
-                        </RouterLink>
+                        </RouterLink> -->
                     </div>
                     <div>
-                        <RouterLink :to="{ name: 'signup' }"
+                        <NavLink link="signup" icon="person_add" text="Signup"/>
+                        <NavLink link="login" icon="login" text="Login"/>
+                        <!-- <RouterLink :to="{ name: 'signup' }"
                             class="py-4 flex items-center space-x-4 px-4"
                             @click="toggleSidebar"
                         >
@@ -52,7 +59,7 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                         >
                             <span class="material-symbols-outlined">login</span>
                             <span class="text-xl font-bold">Login</span>
-                        </RouterLink>
+                        </RouterLink> -->
                     </div>
                 </div>
             </div>
