@@ -16,7 +16,10 @@
                     <input type="password" class="block w-full p-3 rounded text-xl focus:outline-none">
                 </div>
                 <button type="submit"
-                    class="bg-emerald-400 rounded-md px-3 py-3 text-white hover:bg-emerald-500 ease-linear duration-100 font-semibold">Signup</button>
+                    class="bg-emerald-400 rounded-md px-3 py-3 text-white hover:bg-emerald-500 ease-linear duration-100 font-semibold"
+                >
+                    Signup
+                </button>
             </div>
         </div>
     </div>
