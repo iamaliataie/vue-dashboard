@@ -20,7 +20,7 @@ const toggleSidebar = () => {
     <div class="w-full flex flex-col min-h-screen" >
         <Header :isExpanded="isExpanded" :toggleSidebar="toggleSidebar" />
 
-        <div class="flex-1 p-6">
+        <div class="flex-1 p-6 bg-gray-100 z-0">
           <RouterView />
         </div>
 

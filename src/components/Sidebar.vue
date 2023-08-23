@@ -8,7 +8,7 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
 
 <template>
     <div 
-        class="fixed -translate-x-full md:translate-x-0 min-w-fit overflow-hidden bg-gray-950 text-white h-screen md:sticky top-0 ease-in-out duration-300 z-50"
+        class="fixed -translate-x-full md:translate-x-0 min-w-fit overflow-hidden bg-gray-950 text-white h-screen md:sticky top-0 ease-in-out duration-300 z-20"
         :class="isExpanded && 'is-expanded'"
     > 
             <div class="h-full bg-gray-950 flex flex-col">
