@@ -9,7 +9,7 @@
             <img src="../assets/bookmark.png" alt="" class="w-full">
         </div>
         <div class="w-full">
-            <p class=" bg-red-500 text-white px-2 py-1 rounded-sm">Commercial</p>
+            <span class=" bg-red-500 text-white px-2 py-1 rounded-sm">Commercial</span>
             <h1 class="text-3xl">House One</h1>
             <p class="text-2xl">400,000 AFN</p>
         </div>
