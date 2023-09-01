@@ -10,7 +10,7 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
     <div 
         class="fixed -translate-x-full md:translate-x-0 min-w-fit overflow-hidden bg-gray-950 text-white h-screen md:sticky top-0 ease-in-out duration-300 z-20"
         :class="isExpanded && 'is-expanded'"
-    > 
+        > 
             <div class="h-full bg-gray-950 flex flex-col">
                 <div class="relative flex flex-col items-center border-b-2 p-4 space-y-4">
                     <img src="../assets/favicon.svg" alt="logo" class="w-14">
