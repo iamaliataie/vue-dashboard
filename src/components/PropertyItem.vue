@@ -10,7 +10,7 @@
         <div class="w-full flex flex-col space-y-4">
             <small class="bg-red-500 text-white px-2 py-1 rounded-md text-lg w-fit">Commercial</small>
             <div>
-                            <h1 class="text-3xl">House One</h1>
+                <h1 class="text-3xl">House One</h1>
                 <p class="text-2xl">400,000 AFN</p>
             </div>
         </div>
