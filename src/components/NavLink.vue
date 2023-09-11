@@ -12,7 +12,3 @@ const props = defineProps(['link', 'icon', 'text'])
         <span class="text-xl font-bold">{{ text }}</span>
     </RouterLink>
 </template>
-
-<style scoped>
-
-</style>
