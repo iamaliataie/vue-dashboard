@@ -32,7 +32,3 @@ const toggleSidebar = () => {
 
   </div>
 </template>
-
-<style scoped>
-
-</style>
