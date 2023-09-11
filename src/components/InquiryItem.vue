@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <div class="shadow-lg p-6 rounded-md bg-white border">
         <h1 class="text-3xl font-bold">Title of inquiry</h1>
