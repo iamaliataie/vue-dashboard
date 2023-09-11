@@ -5,7 +5,6 @@
 <template>
     <div class="bg-white overflow-hidden rounded-lg p-2 flex flex-col space-y-4 shadow-xl border">
         <div class="w-full relative overflow-hidden rounded-sm bg-green-400">
-            
             <img src="../assets/bookmark.png" alt="" class="w-full">
         </div>
         <div class="w-full flex flex-col space-y-4">
