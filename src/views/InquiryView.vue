@@ -12,6 +12,3 @@ import InquiryItem from '../components/InquiryItem.vue';
       </div>
     </div>
 </template>
-
-<style scoped>
-</style>
