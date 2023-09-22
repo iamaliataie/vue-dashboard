@@ -11,7 +11,8 @@ const userStore = useUserStore()
 const props = defineProps(['isExpanded', 'toggleSidebar'])
 
 const handleLogout = () => {
-    
+    userStore.handleLogout()
+    toggleSidebar()
 }
 
 </script>
@@ -37,7 +38,7 @@ const handleLogout = () => {
                         <NavLink link="login" icon="login" text="Login" @click="toggleSidebar"/>
                     </div>
                     <div v-else>
-                        <NavLink link="login" icon="logout" text="Logout" @click="toggleSidebar"/>
+                        <NavLink icon="logout" text="Logout" @click="handleLogout"/>
                     </div>
                 </div>
             </div>
