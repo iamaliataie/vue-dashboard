@@ -15,9 +15,13 @@ export const useUserStore = defineStore('user', () => {
   const handleLogin = (credentials) => {
     const { email, password } = credentials
 
+    message.value = ''
+
     if (email == user.email && password == user.password) {
       return authenticated.value = true;
     }
+
+    message.value = 'Invalid credentials'
 
   }
 
