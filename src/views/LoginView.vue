@@ -11,7 +11,9 @@ const credentials = reactive({
 })
 
 const handleSubmit = () => {
-    
+
+    userStore.handleLogin(credentials)
+
 }
 
 </script>
