@@ -25,5 +25,9 @@ export const useUserStore = defineStore('user', () => {
 
   }
 
-  return { authenticated, message, handleLogin }
+  const handleLogout = () => {
+    authenticated.value = false
+  }
+
+  return { authenticated, message, handleLogin, handleLogout }
 })
