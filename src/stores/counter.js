@@ -10,6 +10,7 @@ export const useUserStore = defineStore('user', () => {
     password: 'testuser'
   })
 
+  const message = ref('')
 
   const handleLogin = (credentials) => {
     const { email, password } = credentials
