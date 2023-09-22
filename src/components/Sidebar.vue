@@ -1,7 +1,7 @@
 <script setup>
 
 import NavLink from '@/components/NavLink.vue'
-import { useUserStore } from '../stores/counter';
+import { useUserStore } from '../stores/user';
 
 const userStore = useUserStore()
 
@@ -28,6 +28,9 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                     <div v-if="!userStore.authenticated">
                         <NavLink link="signup" icon="person_add" text="Signup" @click="toggleSidebar"/>
                         <NavLink link="login" icon="login" text="Login" @click="toggleSidebar"/>
+                    </div>
+                    <div v-else>
+                        <NavLink link="login" icon="logout" text="Logout" @click="toggleSidebar"/>
                     </div>
                 </div>
             </div>
