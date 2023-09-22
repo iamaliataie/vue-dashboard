@@ -16,6 +16,9 @@ const credentials = reactive({
 const handleSubmit = () => {
 
     userStore.handleLogin(credentials)
+    if (userStore.authenticated) {
+        router.push('/')
+    }
 
 }
 
