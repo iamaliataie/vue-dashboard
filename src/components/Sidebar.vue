@@ -1,11 +1,18 @@
 <script setup>
 
 import NavLink from '@/components/NavLink.vue'
+import { useRouter } from 'vue-router';
 import { useUserStore } from '../stores/user';
+
+const router = useRouter()
 
 const userStore = useUserStore()
 
 const props = defineProps(['isExpanded', 'toggleSidebar'])
+
+const handleLogout = () => {
+    
+}
 
 </script>
 
