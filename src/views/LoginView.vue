@@ -30,7 +30,7 @@ const handleSubmit = () => {
                     <label for="" class="text-lg text-white">Password</label>
                     <input type="password" v-model="credentials.password" class="block w-full p-3 rounded text-xl focus:outline-none">
                 </div>
-                <div>
+                <div v-if="userStore.message" class="px-3 py-2 bg-rose-500 text-white rounded-md">
                     <p>{{ userStore.message }}</p>
                 </div>
                 <button type="submit" class="bg-emerald-400 rounded-md px-3 py-3 text-white hover:bg-emerald-500 ease-linear duration-100 font-semibold">Login</button>
