@@ -1,6 +1,9 @@
 <script setup>
 
 import NavLink from '@/components/NavLink.vue'
+import { useUserStore } from '../stores/counter';
+
+const userStore = useUserStore()
 
 const props = defineProps(['isExpanded', 'toggleSidebar'])
 
@@ -22,7 +25,7 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
                         <NavLink link="property" icon="real_estate_agent" text="Properties" @click="toggleSidebar"/>
                         <NavLink link="inquiry" icon="forum" text="Inquiries" @click="toggleSidebar"/>
                     </div>
-                    <div>
+                    <div v-if="!userStore.authenticated">
                         <NavLink link="signup" icon="person_add" text="Signup" @click="toggleSidebar"/>
                         <NavLink link="login" icon="login" text="Login" @click="toggleSidebar"/>
                     </div>
