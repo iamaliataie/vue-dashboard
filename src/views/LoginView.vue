@@ -1,6 +1,9 @@
 <script setup>
 import { reactive } from 'vue';
+import { useRouter } from 'vue-router';
 import { useUserStore } from '../stores/user';
+
+const router = useRouter()
 
 
 const userStore = useUserStore()
