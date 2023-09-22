@@ -12,6 +12,7 @@ const props = defineProps(['isExpanded', 'toggleSidebar'])
 
 const handleLogout = () => {
     userStore.handleLogout()
+    props.toggleSidebar()
     router.push({name: 'login'})
 }
 
