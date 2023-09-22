@@ -10,5 +10,15 @@ export const useUserStore = defineStore('user', () => {
     password: 'testuser'
   })
 
-  return { authenticated }
+
+  const handleLogin = (credentials) => {
+    const { email, password } = credentials
+
+    if (email == user.email && password == user.password) {
+      return authenticated.value = true;
+    }
+
+  }
+
+  return { authenticated, handleLogin }
 })
