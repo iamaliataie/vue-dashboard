@@ -20,9 +20,7 @@ export const useUserStore = defineStore('user', () => {
     if (email == user.email && password == user.password) {
       return authenticated.value = true;
     }
-
     message.value = 'Invalid credentials'
-
   }
 
   const handleLogout = () => {
