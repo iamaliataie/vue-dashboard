@@ -17,10 +17,10 @@ const handleSubmit = () => {
     if (userStore.authenticated) {
         router.push('/')
     }
-
 }
 
 </script>
+
 <template>
     <div class="h-full flex justify-center items-center">
         <div class="bg-emerald-600 rounded-md p-6 w-full md:w-[500px]">
