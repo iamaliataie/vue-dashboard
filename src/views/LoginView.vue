@@ -43,5 +43,3 @@ const handleSubmit = () => {
         </div>
     </div>
 </template>
-
-<style scoped></style>
