@@ -16,4 +16,3 @@ import PropertyItem from '../components/PropertyItem.vue';
     </div>
   </div>
 </template>
-
