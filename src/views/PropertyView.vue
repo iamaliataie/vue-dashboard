@@ -1,4 +1,5 @@
 <script setup>
+  
 import PropertyItem from '../components/PropertyItem.vue';
 
 </script>
