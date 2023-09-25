@@ -17,5 +17,3 @@ import PropertyItem from '../components/PropertyItem.vue';
   </div>
 </template>
 
-<style scoped>
-</style>
