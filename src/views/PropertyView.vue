@@ -1,6 +1,10 @@
 <script setup>
-  
 import PropertyItem from '../components/PropertyItem.vue';
+import { usePropertyStore } from '../stores/property';
+
+const propertyStore = usePropertyStore()
+
+const properties = propertyStore.properties
 
 </script>
 
