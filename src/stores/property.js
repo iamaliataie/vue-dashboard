@@ -8,7 +8,7 @@ export const usePropertyStore = defineStore('property', () => {
             "title": "House 1",
             "price": 1000.00,
             "type": "Residential",
-            "image": "src/assets/images/property/p1.png",
+            "image": "../assets/images/property/p1.png",
             "color": "bg-green-500",
         },
         {
