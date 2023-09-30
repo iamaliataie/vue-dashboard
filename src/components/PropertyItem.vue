@@ -1,3 +1,8 @@
+<script setup>
+
+const props = defineProps(['property'])
+
+</script>
 <template>
     <div class="bg-white overflow-hidden rounded-lg p-2 flex flex-col space-y-4 shadow-xl border">
         <div class="w-full relative overflow-hidden rounded-sm bg-green-400">
